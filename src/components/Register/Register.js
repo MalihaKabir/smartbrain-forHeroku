@@ -24,8 +24,7 @@ class Register extends React.Component {
 	};
 
 	onRegistration = () => {
-		// console.log(this.state);
-		fetch('http://localhost:3001/register', {
+		fetch('https://ancient-hollows-79351.herokuapp.com/register', {
 			method: 'post',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -62,7 +61,7 @@ class Register extends React.Component {
 									id="name"
 								/>
 							</div>
-							
+
 							<CommonForm onEmailChange={this.onEmailChange} onPasswordChange={this.onPasswordChange} />
 						</fieldset>
 						<div className="">
